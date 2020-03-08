@@ -269,7 +269,8 @@ header nav {}
 
 
 .steps input,
-.steps textarea, .steps select{
+.steps textarea,
+.steps select {
     text-align: right;
     border: 1px solid #C9C9C9;
     border-radius: 6px;
@@ -522,10 +523,11 @@ header nav {}
 }
 
 /* gander */
-.gander-group{
+.gander-group {
     overflow: hidden;
     margin-top: 30px;
 }
+
 .gander-item {
     box-sizing: border-box;
     padding: 0 15px;
@@ -579,6 +581,23 @@ header nav {}
 
 .gander-item input {
     display: none;
+}
+
+.multiple-options {
+
+    direction: rtl;
+    text-align: right;
+}
+
+.multiple-options label {
+    display: inline-block;
+    width: auto;
+    margin-left: 25px;
+}
+
+.multiple-options input {
+    margin: 0;
+    width: auto;
 }
 
 /* ********************************************** */
