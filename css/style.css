@@ -24,10 +24,7 @@
 }
 
 input[type=range] {
-    height: 29px;
     -webkit-appearance: none;
-    margin: 10px 0;
-    width: 100%;
 }
 
 input[type=range]:focus {
@@ -249,7 +246,7 @@ header nav {}
 }
 
 .steps fieldset {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -272,7 +269,7 @@ header nav {}
 
 
 .steps input,
-.steps textarea {
+.steps textarea, .steps select{
     text-align: right;
     border: 1px solid #C9C9C9;
     border-radius: 6px;
@@ -281,6 +278,7 @@ header nav {}
     background: #fff;
     margin-bottom: 15px;
     color: #5E656D;
+    width: 100%;
 }
 
 /*buttons*/
@@ -403,6 +401,7 @@ header nav {}
 
 .range-slider input {
     margin: 0;
+    display: block;
 }
 
 .valeurPrix {
@@ -487,18 +486,18 @@ header nav {}
     margin-top: 0;
     display: table;
     width: 100%;
-    border: 1px solid #C9C9C9;
-    border-radius: 6px;
 }
 
 .regular-filds p i {
     text-align: center;
-    border-left: 1px solid #C9C9C9;
+    border: 1px solid #C9C9C9;
     font-size: 16px;
     background: #fff;
     color: #5E656D;
     width: 50px;
     display: table-cell;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
 }
 
 .regular-filds p input {
@@ -506,6 +505,80 @@ header nav {}
     margin: 0;
     border: none;
     border-radius: 0;
+    border: 1px solid #C9C9C9;
+    border-radius: 6px;
+}
+
+.bd-fild {
+    display: block ruby;
+}
+
+.bd-fild input {
+    width: 35%;
+}
+
+.bd-fild input:last-child {
+    width: 27%;
+}
+
+/* gander */
+.gander-group{
+    overflow: hidden;
+    margin-top: 30px;
+}
+.gander-item {
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.gander-label {
+    text-align: center !important;
+    display: block;
+    background: #fff;
+    border: 1px solid #C9C9C9;
+    border-radius: 20px;
+    padding: 50px;
+    transition: linear .2s;
+    cursor: pointer;
+}
+
+.gander-label:hover {
+    border-color: #0B52B2;
+    background: #0B52B2;
+    transition: linear .2s;
+}
+
+.gander-label:hover i,
+.gander-label:hover p {
+    color: #fff;
+}
+
+.gander-group i {
+    font-size: 90px;
+    color: #0B52B2;
+    margin-bottom: 25px;
+}
+
+.gander-group p {
+    margin-bottom: 0;
+    font-size: 26px;
+    color: #0B52B2;
+    font-weight: 400;
+}
+
+.ganderactive {
+    border-color: #0B52B2;
+    background: #0B52B2;
+}
+
+.ganderactive i,
+.ganderactive p {
+    color: #fff;
+}
+
+.gander-item input {
+    display: none;
 }
 
 /* ********************************************** */

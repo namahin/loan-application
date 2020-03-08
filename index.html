@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
     <!-- header section start from here -->
     <header>
         <div class="container-fluid">
@@ -71,7 +70,6 @@
     <!-- banner section end here -->
 
     <!-- form section start from here -->
-
     <section class="form-sec">
         <div class="container">
             <form class="steps" action="http://www.davidhaygroup.com/">
@@ -92,7 +90,7 @@
 
                 <!-- page 1 -->
                 <fieldset>
-                    <div class="">
+                    <div class="hs-form-field">
                         <label for="loan-ammount">How much money would you like to loan?</label>
                         <div class="loan-ammount">
                             <div class="row mb-3">
@@ -115,10 +113,10 @@
                     <!-- propose of the loan -->
                     <div class="loan-propose">
                         <!-- <p>Loan Propose</p> -->
-                        <div class="row" id="labelgroup">
+                        <div class="row hs-form-field" id="labelgroup">
                             <div class="col-md-4 col-sm-4 col-6">
                                 <label for="vacation" class="proposelabel">
-                                    <input type="radio" name="propose" id="vacation" required>
+                                    <input type="radio" name="propose" id="vacation" required="">
                                     <div class="propose-icon">
                                         <img src="images/icon/beach.png">
                                         <p>Vacation Loan</p>
@@ -207,12 +205,13 @@
                         <label for="contact-number">What is your best contact number?</label>
                         <p>
                             <i class="fal fa-mobile"></i>
-                            <input id="contact-number" type="number">
+                            <input id="contact-number" type="number" required maxlength="10" minlength="10"
+                                placeholder="your mobile number">
                         </p>
                         <label for="email">What email can we use for paper sending?</label>
                         <p>
                             <i class="fas fa-envelope-open-text"></i>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </p>
                     </div>
                     <input type="button" data-page="2" name="previous" class="previous action-button"
@@ -221,28 +220,228 @@
                 </fieldset>
                 <!-- page 3 -->
                 <fieldset>
+                    <div class="regular-filds">
+                        <h4>Tell us a bit about your self. Name should be exactly as written on your ID
+                            card.</h4>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <p>
+                                    <label for="firstname">First Name</label>
+                                    <input id="firstname" type="text" required>
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <p>
+                                    <label for="midname">Mid Name</label>
+                                    <input id="midname" type="text" required>
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <p>
+                                    <label for="lastname">Last Name</label>
+                                    <input id="lastname" type="text" required>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <!-- birth day form -->
+                                <div class="bd-form">
+                                    <label for="birthday">Date of Birth</label>
+                                    <div class="bd-fild">
+                                        <input id="birthday" type="number" placeholder="YYYY" required maxlength="4"
+                                            minlength="4">
+                                        <input id="birthday" type="number" placeholder="MM" required maxlength="2"
+                                            minlength="2">
+                                        <input id="birthday" type="number" placeholder="DD" required maxlength="2"
+                                            minlength="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <p>
+                                    <label for="idnumber">ID Number</label>
+                                    <input type="number" required maxlength="9" minlength="9">
+                                </p>
+                            </div>
 
+                            <div class="col-md-4 col-sm-4">
+                                <p>
+                                    <label for="gender">Gender</label>
+                                    <select name="" id="gender" required>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <input type="button" data-page="3" name="previous" class="previous action-button"
                         value="Previous" />
                     <input type="button" data-page="3" name="next" class="next action-button" value="Next" />
                 </fieldset>
                 <!-- page 4 -->
                 <fieldset>
-
+                    <div class="regular-filds">
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="address">Address</label>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <input type="text" id="address" placeholder="City" required>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <input type="text" id="address" placeholder="Street(including apartment number)"
+                                        required>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <label for="manthlypay">Do you monthly pay for the apartment?</label>
+                                    <select name="" id="manthlypay" required>
+                                        <option value="">Yes, rent</option>
+                                        <option value="">Yes, montage</option>
+                                        <option value="">No, I fully won it</option>
+                                        <option value="">No, Family’s property</option>
+                                        <option value="">Other</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <label for="outcome">Monthly outcome for rent/mortgage?</label>
+                                    <input type="number" id="outcome" placeholder="" required>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <input type="button" data-page="4" name="previous" class="previous action-button"
                         value="Previous" />
                     <input type="button" data-page="4" name="next" class="next action-button" value="Next" />
                 </fieldset>
                 <!-- page 5 -->
                 <fieldset>
-
+                    <div class="regular-filds">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="edu">Education</label>
+                                <p>
+                                    <select name="" id="edu" required>
+                                        <option value="1">Full time</option>
+                                        <option value="">Half time</option>
+                                        <option value="">Academy</option>
+                                        <option value="">None</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <label for="edu">Family status</label>
+                                    <select name="" id="edu" required>
+                                        <option value="1">Single</option>
+                                        <option value="">Married</option>
+                                        <option value="">Divorced</option>
+                                        <option value="">Wildow</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <label for="kids">Number of kids under 18 years old</label>
+                                    <input type="number" id="kids" placeholder="" required>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <label for="momname">What was your mother last name before getting married?</label>
+                                    <input type="text" id="momname" placeholder="" required>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <input type="button" data-page="5" name="previous" class="previous action-button"
                         value="Previous" />
                     <input type="button" data-page="5" name="next" class="next action-button" value="Next" />
                 </fieldset>
                 <!-- page 6 -->
                 <fieldset>
-
+                    <div class="regular-filds">
+                        <h4 class="text-center mb-3">The loan is on the client, not his partner and information for the
+                            partner is used to check that
+                            everything is legit</h4>
+                        <h3 class="text-center">partner Information</h3>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5">
+                                <p>
+                                    <label for="firstnameP">First Name</label>
+                                    <input id="firstnameP" type="text" required>
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <p>
+                                    <label for="lastnameP">Last Name</label>
+                                    <input id="lastnameP" type="text" required>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <p>
+                                    <label for="genderP">Gender</label>
+                                    <select name="" id="genderP" required>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <!-- birth day form -->
+                                <div class="bd-form">
+                                    <label for="birthday">Date of Birth</label>
+                                    <div class="bd-fild">
+                                        <input id="birthday" type="number" placeholder="YYYY" required maxlength="4"
+                                            minlength="4">
+                                        <input id="birthday" type="number" placeholder="MM" required maxlength="2"
+                                            minlength="2">
+                                        <input id="birthday" type="number" placeholder="DD" required maxlength="2"
+                                            minlength="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <label for="idnumber">ID Number</label>
+                                    <input type="number" required maxlength="9" minlength="9">
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <label for="incomeP">Monthly income</label>
+                                    <input type="number" id="incomeP">
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p>
+                                    <label for="work">Working Status</label>
+                                    <select name="" id="work" required>
+                                        <option onclick="getElementById('work')" value="">Working</option>
+                                        <option value="">Indepeantnt</option>
+                                        <option value="">Not working</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                
+                            </div>
+                        </div>
+                    </div>
                     <input type="button" data-page="6" name="previous" class="previous action-button"
                         value="Previous" />
                     <input type="button" data-page="6" name="next" class="next action-button" value="Next" />

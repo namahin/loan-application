@@ -145,7 +145,8 @@ range.on('input', function () {
     value.html(this.value + ' ILS');
 });
 
-// Add active class to the current button (highlight it)
+
+// script for propose group
 var header = document.getElementById("labelgroup");
 var btns = header.getElementsByClassName("proposelabel");
 for (var i = 0; i < btns.length; i++) {
@@ -155,5 +156,19 @@ for (var i = 0; i < btns.length; i++) {
             current[0].className = current[0].className.replace(" labelactive", "");
         }
         this.className += " labelactive";
+    });
+}
+
+
+// script for gender group
+var header = document.getElementById("gander", "ganderP");
+var btns = header.getElementsByClassName("gander-label");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("ganderactive");
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace(" ganderactive", "");
+        }
+        this.className += " ganderactive";
     });
 }
