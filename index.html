@@ -664,8 +664,8 @@
                     </div>
                 </div>
             </div>
-            <a href="index.html" class="cancel-button" >Cancel loan request</a>
-            <input type="button" data-page="11" name="next" class="next cancel-button" value="Help me finding a loan">
+            <a id="cancel_id" type="button" role="button" href="index.html" class="cancel-button action-button" >Cancel loan request</a>
+            <input type="button" data-page="11" name="next" class="next submit-button action-button" value="Help me finding a loan">
         </fieldset>
         <!-- page 12 -->
         <fieldset>
@@ -764,6 +764,20 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        UIkit.util.on('#cancel_id', 'click', function (e) {
+            e.preventDefault();
+            e.target.blur();
+            UIkit.modal.confirm('<center>Do you want to cancel loan request?</center>').then(
+                function () {
+                    console.log('Confirmed.')
+                },
+                function () {
+                    console.log('Rejected.')
+                });
+        });
+    </script>
+    <!-- delete class modal -->
 </body>
 
 </html>

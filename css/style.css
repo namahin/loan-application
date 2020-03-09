@@ -554,13 +554,28 @@ header nav {}
     width: auto;
 }
 
-.cancel-button {}
+.cancel-button {
+    width: auto !important;
+    padding: 13px 40px;
+}
+
+.submit-button {
+    width: auto !important;
+    padding: 13px 40px;
+}
 
 .tearms {}
 
-.tearms label {width: auto;display: block;}
+.tearms label {
+    width: auto;
+    display: block;
+}
 
-.tearms label input {width: auto;margin-bottom: 0;margin-left: 5px;}
+.tearms label input {
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
 
 /* ********************************************** */
 /* footer section start from here */
