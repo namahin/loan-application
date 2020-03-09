@@ -653,19 +653,37 @@
             <div class="regular-filds">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-right">Congratulations, we have a principal approval for your loan. The firm calcalists will examine
+                        <p class="text-right">Congratulations, we have a principal approval for your loan. The firm
+                            calcalists will examine
                             your request and contact you in regards to your loan.</p>
                         <p class="text-right">Before doing so, let’s make sure of a few points.</p>
                         <div class="tearms">
-                            <label for="tearms1"><input id="tearms1" type="checkbox"> 1. Are you aware that all of the checks are free of charge?</label>
-                            <label for="tearms2"><input id="tearms2" type="checkbox"> 2. Are you aware that the company does not accept any payment from your side till receiving the loan at your account?</label>
-                            <label for="tearms3"><input id="tearms3" type="checkbox"> 3. Are you ware that in case of getting a final approval for your loan, your payment for the company will be 10% + taxes from your loan amount</label>
+                            <label for="tearms1"><input id="tearms1" type="checkbox"> 1. Are you aware that all of the
+                                checks are free of charge?</label>
+                            <label for="tearms2"><input id="tearms2" type="checkbox"> 2. Are you aware that the company
+                                does not accept any payment from your side till receiving the loan at your
+                                account?</label>
+                            <label for="tearms3"><input id="tearms3" type="checkbox"> 3. Are you ware that in case of
+                                getting a final approval for your loan, your payment for the company will be 10% + taxes
+                                from your loan amount</label>
                         </div>
                     </div>
                 </div>
             </div>
-            <a id="cancel_id" type="button" role="button" href="index.html" class="cancel-button action-button" >Cancel loan request</a>
-            <input type="button" data-page="11" name="next" class="next submit-button action-button" value="Help me finding a loan">
+            <a id="cancel_id" type="button" href="#" role="button" class="cancel-button action-button"
+                uk-toggle="target: #modal-warning">Cancel loan request</a>
+            <input type="button" data-page="11" name="next" class="next submit-button action-button"
+                value="Help me finding a loan">
+            <div id="modal-warning" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <p>Do yoy want to cancel this loan request?</p>
+                    <p class="uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close" type="button">No</button>
+                        <a type="button" role="button" href="index.html" class="uk-button uk-button-primary"
+                            type="button">Yes</a>
+                    </p>
+                </div>
+            </div>
         </fieldset>
         <!-- page 12 -->
         <fieldset>
@@ -764,19 +782,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        UIkit.util.on('#cancel_id', 'click', function (e) {
-            e.preventDefault();
-            e.target.blur();
-            UIkit.modal.confirm('<center>Do you want to cancel loan request?</center>').then(
-                function () {
-                    console.log('Confirmed.')
-                },
-                function () {
-                    console.log('Rejected.')
-                });
-        });
-    </script>
+
     <!-- delete class modal -->
 </body>
 
