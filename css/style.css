@@ -537,67 +537,6 @@ header nav {}
     width: 27%;
 }
 
-/* gander */
-.gander-group {
-    overflow: hidden;
-    margin-top: 30px;
-}
-
-.gander-item {
-    box-sizing: border-box;
-    padding: 0 15px;
-    margin-bottom: 30px;
-}
-
-.gander-label {
-    text-align: center !important;
-    display: block;
-    background: #fff;
-    border: 1px solid #C9C9C9;
-    border-radius: 20px;
-    padding: 50px;
-    transition: linear .2s;
-    cursor: pointer;
-}
-
-.gander-label:hover {
-    border-color: #0B52B2;
-    background: #0B52B2;
-    transition: linear .2s;
-}
-
-.gander-label:hover i,
-.gander-label:hover p {
-    color: #fff;
-}
-
-.gander-group i {
-    font-size: 90px;
-    color: #0B52B2;
-    margin-bottom: 25px;
-}
-
-.gander-group p {
-    margin-bottom: 0;
-    font-size: 26px;
-    color: #0B52B2;
-    font-weight: 400;
-}
-
-.ganderactive {
-    border-color: #0B52B2;
-    background: #0B52B2;
-}
-
-.ganderactive i,
-.ganderactive p {
-    color: #fff;
-}
-
-.gander-item input {
-    display: none;
-}
-
 .multiple-options {
 
     direction: rtl;
@@ -614,6 +553,14 @@ header nav {}
     margin: 0;
     width: auto;
 }
+
+.cancel-button {}
+
+.tearms {}
+
+.tearms label {width: auto;display: block;}
+
+.tearms label input {width: auto;margin-bottom: 0;margin-left: 5px;}
 
 /* ********************************************** */
 /* footer section start from here */
