@@ -1,33 +1,33 @@
 // form script
 
-$(document).ready(function () {
+$(document).ready(function() {
     var current_fs, next_fs, previous_fs;
     var left, opacity, scale;
     var animating;
     $(".steps").validate({
         errorClass: 'invalid',
         errorElement: 'span',
-        errorPlacement: function (error, element) {
+        errorPlacement: function(error, element) {
             error.insertAfter(element.next('span').children());
         },
-        highlight: function (element) {
+        highlight: function(element) {
             $(element).next('span').show();
         },
-        unhighlight: function (element) {
+        unhighlight: function(element) {
             $(element).next('span').hide();
         }
     });
-    $(".next").click(function () {
+    $(".next").click(function() {
         $(".steps").validate({
             errorClass: 'invalid',
             errorElement: 'span',
-            errorPlacement: function (error, element) {
+            errorPlacement: function(error, element) {
                 error.insertAfter(element.next('span').children());
             },
-            highlight: function (element) {
+            highlight: function(element) {
                 $(element).next('span').show();
             },
-            unhighlight: function (element) {
+            unhighlight: function(element) {
                 $(element).next('span').hide();
             }
         });
@@ -43,7 +43,9 @@ $(document).ready(function () {
         current_fs.animate({
             opacity: 0
         }, {
-            step: function (now, mx) {
+            step: function(now, mx) {
+                scale = 1 - (1 - now) * 0.2;
+                left = (now * 50) + "%";
                 opacity = 1 - now;
                 current_fs.css({
                     'transform': 'scale(' + scale + ')'
@@ -54,24 +56,24 @@ $(document).ready(function () {
                 });
             },
             duration: 800,
-            complete: function () {
+            complete: function() {
                 current_fs.hide();
                 animating = false;
             },
             easing: 'easeInOutExpo'
         });
     });
-    $(".submit").click(function () {
+    $(".submit").click(function() {
         $(".steps").validate({
             errorClass: 'invalid',
             errorElement: 'span',
-            errorPlacement: function (error, element) {
+            errorPlacement: function(error, element) {
                 error.insertAfter(element.next('span').children());
             },
-            highlight: function (element) {
+            highlight: function(element) {
                 $(element).next('span').show();
             },
-            unhighlight: function (element) {
+            unhighlight: function(element) {
                 $(element).next('span').hide();
             }
         });
@@ -87,7 +89,9 @@ $(document).ready(function () {
         current_fs.animate({
             opacity: 0
         }, {
-            step: function (now, mx) {
+            step: function(now, mx) {
+                scale = 1 - (1 - now) * 0.2;
+                left = (now * 50) + "%";
                 opacity = 1 - now;
                 current_fs.css({
                     'transform': 'scale(' + scale + ')'
@@ -98,14 +102,14 @@ $(document).ready(function () {
                 });
             },
             duration: 800,
-            complete: function () {
+            complete: function() {
                 current_fs.hide();
                 animating = false;
             },
             easing: 'easeInOutExpo'
         });
     });
-    $(".previous").click(function () {
+    $(".previous").click(function() {
         if (animating) return false;
         animating = true;
         current_fs = $(this).parent();
@@ -115,7 +119,9 @@ $(document).ready(function () {
         current_fs.animate({
             opacity: 0
         }, {
-            step: function (now, mx) {
+            step: function(now, mx) {
+                scale = 0.8 + (1 - now) * 0.2;
+                left = ((1 - now) * 50) + "%";
                 opacity = 1 - now;
                 current_fs.css({
                     'left': left
@@ -126,7 +132,7 @@ $(document).ready(function () {
                 });
             },
             duration: 800,
-            complete: function () {
+            complete: function() {
                 current_fs.hide();
                 animating = false;
             },
