@@ -62,6 +62,17 @@
     text-align: right;
     float: right;
   }
+
+  .cancel-button {
+
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .submit-button {
+    display: block;
+    width: 100% !important;
+  }
 }
 
 /* // Medium devices (tablets, less than 992px) */
