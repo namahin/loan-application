@@ -668,3 +668,42 @@ footer a i {
     font-size: 12px;
     margin-left: 5px;
 }
+
+/* loder stylesheet */
+.loder-box{}
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: #3050ff;
+    vertical-align: middle;
+    pointer-events: none;
+    border: 7px dotted currentcolor;
+    border-radius: 50%;
+    -webkit-animation: 3s loader linear infinite;
+    animation: 3s loader cubic-bezier(.68,-0.55,.27,1.55) infinite;
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
