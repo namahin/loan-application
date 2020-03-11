@@ -260,9 +260,11 @@ header {
     max-width: 900px;
     margin: auto;
     transform: scale(1) !important;
-    transition: linear 1s;
+    ! transition: linear 0s;
     top: 0;
     left: 0 !important;
+    transition-delay: 0s;
+    transition-duration: 0s;
 }
 
 /*Hide all except first fieldset*/

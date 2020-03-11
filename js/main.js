@@ -55,7 +55,7 @@ $(document).ready(function() {
                     'opacity': opacity
                 });
             },
-            duration: 800,
+            duration: 0,
             complete: function() {
                 current_fs.hide();
                 animating = false;
@@ -101,7 +101,7 @@ $(document).ready(function() {
                     'opacity': opacity
                 });
             },
-            duration: 800,
+            duration: 0,
             complete: function() {
                 current_fs.hide();
                 animating = false;
@@ -131,7 +131,7 @@ $(document).ready(function() {
                     'opacity': opacity
                 });
             },
-            duration: 800,
+            duration: 0,
             complete: function() {
                 current_fs.hide();
                 animating = false;
