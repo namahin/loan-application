@@ -253,6 +253,8 @@ header {
 .steps fieldset {
     max-width: 900px;
     margin: auto;
+    transform: scale(1) !important;
+    transition: linear 0.5s;
 }
 
 /*Hide all except first fieldset*/
