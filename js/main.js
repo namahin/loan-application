@@ -60,7 +60,7 @@ $(document).ready(function() {
                 current_fs.hide();
                 animating = false;
             },
-            easing: 'easeInOutExpo'
+            easing: 'fade'
         });
     });
     $(".submit").click(function() {
@@ -78,7 +78,7 @@ $(document).ready(function() {
             }
         });
         if ((!$('.steps').valid())) {
-            return false;
+            return true;
         }
         if (animating) return false;
         animating = true;
@@ -106,7 +106,7 @@ $(document).ready(function() {
                 current_fs.hide();
                 animating = false;
             },
-            easing: 'easeInOutExpo'
+            easing: 'fade'
         });
     });
     $(".previous").click(function() {
@@ -136,7 +136,7 @@ $(document).ready(function() {
                 current_fs.hide();
                 animating = false;
             },
-            easing: 'easeInOutExpo'
+            easing: 'fade'
         });
     });
 });

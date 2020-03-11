@@ -259,17 +259,13 @@ header {
 .steps fieldset {
     max-width: 900px;
     margin: auto;
-    transform: scale(1) !important;
-    ! transition: linear 0s;
-    top: 0;
-    left: 0 !important;
-    transition-delay: 0s;
-    transition-duration: 0s;
+    transition: linear .5s;
 }
 
 /*Hide all except first fieldset*/
 .steps fieldset:not(:first-of-type) {
     display: none;
+    transition: linear .5s;
 }
 
 /*inputs*/
@@ -310,6 +306,7 @@ header {
     text-align: center;
     transition: linear .2s;
     width: 125px;
+    padding: 15px;
 }
 
 .steps .next,

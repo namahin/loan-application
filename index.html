@@ -70,7 +70,7 @@
     <!-- banner section end here -->
 
     <!-- form section start from here -->
-    <section class="form-sec">
+    <section class="form-sec" id="scroll-top">
         <div class="container">
             <form class="steps" action="http://www.davidhaygroup.com/">
                 <ul id="progressbar">
@@ -91,24 +91,20 @@
 
                 <!-- page 1 -->
                 <fieldset>
-                    <div class="hs-form-field">
-                        <label for="loan-ammount">How much money would you like to loan?</label>
-                        <div class="loan-ammount">
-                            <div class="row mb-3">
-                                <div class="col-6">
-                                    <div class="loan-ammount-low">Min: 5,000 ILS</div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="loan-ammount-high text-right">Max: 80,000 ILS</div>
-                                </div>
+                    <label for="loan-ammount">How much money would you like to loan?</label>
+                    <div class="loan-ammount">
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="loan-ammount-low">Min: 5,000 ILS</div>
                             </div>
-                            <div class="range-slider">
-                                <!-- loan range -->
-                                <input class="input-range" type="range" value="10000" min="5000" max="80000" ">
-                                <div class=" valeurPrix">
-                                <span class="range-value"></span>
+                            <div class="col-6">
+                                <div class="loan-ammount-high text-right">Max: 80,000 ILS</div>
                             </div>
                         </div>
+                        <div class="range-slider">
+                            <!-- loan range -->
+                            <input class="input-range" type="range" value="10000" min="5000" max="80000" ">
+                                <div class=" valeurPrix"><span class="range-value"></span></div>
                     </div>
         </div>
         <!-- propose of the loan -->
@@ -198,7 +194,7 @@
                 </div>
             </div>
         </div>
-        <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+        <a href="#scroll-top" type="button" data-page="1" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 2 -->
         <fieldset>
@@ -215,8 +211,9 @@
                     <input type="email" name="email" id="email">
                 </p>
             </div>
-            <input type="button" data-page="2" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="2" name="next" class="next action-button" value="Next" />
+            <a href="#scroll-top" type="button" data-page="2" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="2" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 3 -->
         <fieldset>
@@ -275,8 +272,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="3" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="3" name="next" class="next action-button" value="Next" />
+            <a href="#scroll-top" type="button" data-page="3" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="3" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 4 -->
         <fieldset>
@@ -317,8 +315,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="4" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="4" name="next" class="next action-button" value="Next" />
+            <a href="#scroll-top" type="button" data-page="4" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="4" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 5 -->
         <fieldset>
@@ -362,8 +361,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="5" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="5" name="next" class="next action-button" value="Next" />
+            <a href="#scroll-top" type="button" data-page="5" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="5" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 6 -->
         <fieldset>
@@ -453,8 +453,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="6" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="6" name="next" class="next action-button" value="Next" />
+            <a href="#scroll-top" type="button" data-page="6" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="6" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 7 -->
         <fieldset>
@@ -507,8 +508,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="7" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="7" name="next" class="next action-button" value="Next" />
+            <a href="#scroll-top" type="button" data-page="7" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="7" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 8 -->
         <fieldset>
@@ -544,8 +546,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="8" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="8" name="next" class="next action-button" value="Next" />
+            <a href="#scroll-top" type="button" data-page="8" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="8" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 9 -->
         <fieldset>
@@ -576,8 +579,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="9" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="9" name="next" class="next action-button" value="Next" />
+            <a href="#scroll-top" type="button" data-page="9" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="9" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 10 -->
         <fieldset>
@@ -617,8 +621,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="10" name="previous" class="previous action-button" value="Previous">
-            <input type="button" data-page="10" name="next" class="next action-button" value="Next">
+            <a href="#scroll-top" type="button" data-page="10" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="10" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <!-- page 11 -->
         <fieldset>
@@ -646,25 +651,31 @@
                     </div>
                 </div>
             </div>
-            <input type="button" data-page="11" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" data-page="11" name="next" class="next action-button" value="Next">
+            <a href="#scroll-top" type="button" data-page="11" name="previous" class="previous action-button"
+                uk-scroll>Previous</a>
+            <a href="#scroll-top" type="button" data-page="11" name="next" class="next action-button" uk-scroll>Next</a>
         </fieldset>
         <fieldset>
             <div class="regular-filds">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-right">Congratulations, we have a principal approval for your loan. The firm
+                        <p class="text-right">Congratulations, we have a principal approval for your loan. The
+                            firm
                             calcalists will examine
                             your request and contact you in regards to your loan.</p>
                         <p class="text-right">Before doing so, let’s make sure of a few points.</p>
                         <div class="tearms">
-                            <label for="tearms1"><input id="tearms1" type="checkbox"> 1. Are you aware that all of the
+                            <label for="tearms1"><input id="tearms1" type="checkbox"> 1. Are you aware that all
+                                of the
                                 checks are free of charge?</label>
-                            <label for="tearms2"><input id="tearms2" type="checkbox"> 2. Are you aware that the company
+                            <label for="tearms2"><input id="tearms2" type="checkbox"> 2. Are you aware that the
+                                company
                                 does not accept any payment from your side till receiving the loan at your
                                 account?</label>
-                            <label for="tearms3"><input id="tearms3" type="checkbox"> 3. Are you ware that in case of
-                                getting a final approval for your loan, your payment for the company will be 10% + taxes
+                            <label for="tearms3"><input id="tearms3" type="checkbox"> 3. Are you ware that in
+                                case of
+                                getting a final approval for your loan, your payment for the company will be 10%
+                                + taxes
                                 from your loan amount</label>
                         </div>
                     </div>
@@ -672,8 +683,8 @@
             </div>
             <a id="cancel_id" type="button" href="#" role="button" class="cancel-button action-button"
                 uk-toggle="target: #modal-warning">Cancel loan request</a>
-            <input type="button" data-page="11" name="next" class="next submit-button action-button"
-                value="Help me finding a loan">
+            <a href="#scroll-top" type="button" data-page="11" name="next" class="next submit-button action-button"
+                uk-scroll>Help me finding a loan</a>
             <div id="modal-warning" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
                     <p>Do yoy want to cancel this loan request?</p>
