@@ -678,9 +678,10 @@ footer a i {
     color: #3050ff;
     vertical-align: middle;
     pointer-events: none;
-    border: 7px dotted currentcolor;
+    border: 7px dotted;
+    -webkit-border: 7px dotted;
     border-radius: 50%;
-    -webkit-animation: 3s loader linear infinite;
+    -webkit-animation: 3s loader cubic-bezier(.68,-0.55,.27,1.55) infinite;
     animation: 3s loader cubic-bezier(.68,-0.55,.27,1.55) infinite;
 }
 
