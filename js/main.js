@@ -141,15 +141,15 @@ $(document).ready(function() {
     });
 });
 
-// form script for loan
-var range = $('.input-range'),
-    value = $('.range-value');
+// form script for loan input range
+// var range = $('.input-range'),
+//     value = $('.range-value');
 
-value.html(range.attr('value') + ' ILS');
+// value.html(range.attr('value') + ' ILS');
 
-range.on('input', function () {
-    value.html(this.value + ' ILS');
-});
+// range.on('input', function () {
+//     value.html(this.value + ' ILS');
+// });
 
 
 // script for propose group
@@ -162,19 +162,5 @@ for (var i = 0; i < btns.length; i++) {
             current[0].className = current[0].className.replace(" labelactive", "");
         }
         this.className += " labelactive";
-    });
-}
-
-
-// script for gender group
-var header = document.getElementById("gander", "ganderP");
-var btns = header.getElementsByClassName("gander-label");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("ganderactive");
-        if (current.length > 0) {
-            current[0].className = current[0].className.replace(" ganderactive", "");
-        }
-        this.className += " ganderactive";
     });
 }
