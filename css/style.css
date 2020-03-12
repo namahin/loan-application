@@ -660,7 +660,8 @@ footer a i {
 }
 
 /* loder stylesheet */
-.loder-box{}
+.loder-box {}
+
 .loader {
     display: inline-block;
     width: 50px;
@@ -671,8 +672,8 @@ footer a i {
     border: 7px dotted;
     -webkit-border: 7px dotted;
     border-radius: 50%;
-    -webkit-animation: 3s loader cubic-bezier(.68,-0.55,.27,1.55) infinite;
-    animation: 3s loader cubic-bezier(.68,-0.55,.27,1.55) infinite;
+    -webkit-animation: 3s loader cubic-bezier(.68, -0.55, .27, 1.55) infinite;
+    animation: 3s loader cubic-bezier(.68, -0.55, .27, 1.55) infinite;
 }
 
 @-webkit-keyframes loader {
@@ -700,34 +701,34 @@ footer a i {
 }
 
 /* input range */
-.input-range {
-  }
-  
-  .input-range__slider {
+.input-range {}
+
+.input-range__slider {
     width: 100%;
-  }
-  
-  .progress,
-  .progress__bar {
+}
+
+.progress,
+.progress__bar {
     height: 40px;
-  }
-  
-  .progress__value {
+}
+
+.progress__value {
     position: absolute;
     top: 50%;
     right: 10px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     z-index: 5;
     background: #fff;
     padding: 0 5px;
     border-radius: 5px;
-  }
-  
-  .progress {
-    background-color: #94E3FB;
+}
+
+.progress {
+    background-color: #E9E9E9;
     position: relative;
-  }
-.progress:before{
+}
+
+.progress:before {
     content: '';
     background: #FCFCFC;
     position: absolute;
@@ -737,13 +738,15 @@ footer a i {
     height: 40px;
     transform: rotate(-2.1deg);
 }
-  .progress__bar {
-    background-color: #006CFF;
-  }
-  
-  *, *:before, *:after {
+
+.progress__bar {
+    background-color: #0088FFAB;
+}
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }
-  
-  main {
-  }
+}
+
+main {}
