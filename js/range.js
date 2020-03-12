@@ -1,30 +1,47 @@
-var InputRange = React.createClass({ displayName: "InputRange",
+var InputRange = React.createClass({
+  displayName: "InputRange",
   onChangeListener: function (event) {
     var el = this.refs.inputRangeRef.getDOMNode();
     jQuery("body").trigger("inputRange.changed", {
-      value: el.value });
+      value: el.value
+    });
 
   },
 
   render: function () {
     return (
-      React.createElement("div", { className: "input-range" },
-      React.createElement("input", { type: "range", ref: "inputRangeRef", onChange: this.onChangeListener, className: "input-range__slider", min: "0", max: "100", step: ".1", defaultValue: "0" })));
+      React.createElement("div", {
+          className: "input-range"
+        },
+        React.createElement("input", {
+          type: "range",
+          ref: "inputRangeRef",
+          onChange: this.onChangeListener,
+          className: "input-range__slider",
+          min: "0",
+          max: "100",
+          step: "1",
+          defaultValue: "0"
+        })));
 
 
-  } });
+  }
+});
 
 
-var ProgressBar = React.createClass({ displayName: "ProgressBar",
+var ProgressBar = React.createClass({
+  displayName: "ProgressBar",
   getInitialState: function () {
     return {
-      value: "0%" };
+      value: "0%"
+    };
 
   },
 
   onInputRangeChanged: function (event, data) {
     this.setState({
-      value: data.value + "%" });
+      value: data.value + "%"
+    });
 
   },
 
@@ -34,30 +51,43 @@ var ProgressBar = React.createClass({ displayName: "ProgressBar",
 
   render: function () {
     var style = {
-      width: this.state.value };
+      width: this.state.value
+    };
 
 
     return (
-      React.createElement("div", { className: "progress" },
-      React.createElement("div", { className: "progress__bar", style: style }),
-      React.createElement("span", { className: "progress__value" }, this.state.value)));
+      React.createElement("div", {
+          className: "progress"
+        },
+        React.createElement("div", {
+          className: "progress__bar",
+          style: style
+        }),
+        React.createElement("span", {
+          className: "progress__value"
+        }, this.state.value)));
 
 
-  } });
+  }
+});
 
 
-var Title = React.createClass({ displayName: "Title",
+var Title = React.createClass({
+  displayName: "Title",
   render: function () {
     return (
       React.createElement("h1", null, this.props.value));
 
-  } });
+  }
+});
 
 
 React.render(
-React.createElement("div", null,
-React.createElement(Title, { value: "ReactJS progress bar example" }),
-React.createElement(ProgressBar, null),
-React.createElement(InputRange, null)),
+  React.createElement("div", null,
+    React.createElement(Title, {
+      value: ""
+    }),
+    React.createElement(ProgressBar, null),
+    React.createElement(InputRange, null)),
 
-document.getElementById("app"));
+  document.getElementById("loanRange"));
