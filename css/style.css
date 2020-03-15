@@ -49,9 +49,9 @@ input[type=range]:focus {
 
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 3px;
+    height: 10px;
     cursor: pointer;
-    background: #0B52B2;
+    background: #DCDCDC;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -71,17 +71,17 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 input[type=range]::-moz-range-track {
     width: 100%;
-    height: 3px;
+    height: 10px;
     cursor: pointer;
-    background: #0B52B2;
+    background: #DCDCDC;
 }
 
 input[type=range]::-moz-range-thumb {
-    border: 10px solid #3BCBFF;
+    border: 10px solid #CCECFB;
     height: 40px;
     width: 40px;
     border-radius: 30px;
-    background: #0B52B2;
+    background: #98DFFF;
     cursor: pointer;
 }
 
@@ -89,26 +89,23 @@ input[type=range]::-ms-track {
     width: 100%;
     height: 3px;
     cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
 }
 
 input[type=range]::-ms-fill-lower {
-    background: #0B52B2;
+    background: #98DFFF;
 }
 
 input[type=range]::-ms-fill-upper {
-    background: #0B52B2;
+    background: #DCDCDC;
 }
 
 input[type=range]::-ms-thumb {
     margin-top: 1px;
-    border: 10px solid #3BCBFF;
+    border: 10px solid #CCECFB;
     height: 60px;
     width: 60px;
     border-radius: 30px;
-    background: #0B52B2;
+    background: #98DFFF;
     cursor: pointer;
 }
 
@@ -394,10 +391,9 @@ header {
 }
 
 .range-slider {
-
     display: table;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .range-slider input {
@@ -407,10 +403,10 @@ header {
     padding: 0;
     position: relative;
     /* top: -12px; */
+    z-index: 1;
 }
 
 .valeurPrix {
-
     width: 120px;
     text-align: right;
     display: table-cell;
@@ -426,11 +422,12 @@ header {
 /* propose of the loan */
 .loan-propose {
     margin-bottom: 40px;
+    padding-top: 50px;
 }
 
 .proposelabel {
     background: #fff;
-    border: 1px solid #C9C9C9;
+    border: px solid #C9C9C9;
     border-radius: 20px;
     padding: 35px 15px;
     margin-bottom: 25px !important;
@@ -709,23 +706,32 @@ footer a i {
 
 .progress,
 .progress__bar {
-    height: 40px;
+    height: 35px;
+    background-color: #00AEFF4D;
+}
+
+.progress__bar {
+
+    position: relative;
+    z-index: 0;
 }
 
 .progress__value {
     position: absolute;
-    top: 50%;
-    right: 10px;
+    top: -45px;
     transform: translate(0, -50%);
     z-index: 5;
-    background: #fff;
-    padding: 0 5px;
+    background: #98DFFF;
+    padding: 8px 25px;
     border-radius: 5px;
+    color: #fff;
+    right: 0;
 }
 
 .progress {
-    background-color: #E9E9E9;
+    background-color: #F3F2F2;
     position: relative;
+    overflow: initial;
 }
 
 .progress:before {
@@ -735,13 +741,11 @@ footer a i {
     top: -20px;
     left: -4px;
     right: 0;
-    height: 40px;
+    height: 38px;
     transform: rotate(-2.1deg);
+    z-index: 1;
 }
 
-.progress__bar {
-    background-color: #0088FFAB;
-}
 
 *,
 *:before,
@@ -749,4 +753,6 @@ footer a i {
     box-sizing: border-box;
 }
 
-main {}
+.loan-ammount {
+    padding-top: 80px;
+}
